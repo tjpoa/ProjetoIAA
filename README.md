@@ -20,13 +20,7 @@ Este projeto tem como objetivo desenvolver um modelo de previsão de risco de do
 ```
   ProjetoIAA_Folder      
 ├── data
-│   ├── CVD_10reduced_strategy1.csv
-│   ├── CVD_10reduced_strategy2.csv
-│   ├── CVD_10reduced.csv
-│   ├── CVD_20reduced_strategy1.csv
-│   ├── CVD_20reduced_strategy2.csv
-│   ├── CVD_20reduced.csv
-│   └── CVD_normalized_discretized_processed.csv
+│   ├── cvd_df.csv
 ├── notebooks
 │   ├── DataUnderstanding.ipynb
 │   ├── DataPreparation.ipynb
