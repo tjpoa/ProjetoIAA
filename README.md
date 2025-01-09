@@ -46,7 +46,7 @@ Esta seção fornece uma visualização e análise preliminar do conjunto de dad
 * Uma visão geral dos primeiros registros para entender o conteúdo.
 
 #### Importações
-O notebook começa importa bibliotecas essenciais para manipulação e visualização de dados:
+O notebook importa bibliotecas essenciais para manipulação e visualização de dados:
 
         import pandas as pd
         import numpy as np
