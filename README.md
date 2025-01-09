@@ -1,6 +1,6 @@
 # Documentação do Projeto
 
-## Table of Contents
+## Índice
 
 1. [Introdução](#introduction)
 2. [Estrutura](#app-structure)
@@ -10,8 +10,6 @@
     3. [Modeling.ipynb](#modelingipynb)
     4. [Evaluation.ipynb](#evaluationipynb)
     5. [Deployment.ipynb](#deploymentipynb)
-
-
 4. [Como correr ?](#HowtoRuntheApp)
 
 ## Introdução
