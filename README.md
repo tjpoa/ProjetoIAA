@@ -20,16 +20,13 @@ Este projeto tem como objetivo desenvolver um modelo de previsão de risco de do
 ```
   ProjetoIAA_Folder      
 ├── data
-│   ├── CVD_10reduced_strategy1.csv
-│   ├── CVD_10reduced_strategy2.csv
-│   ├── CVD_10reduced.csv
-│   ├── CVD_20reduced_strategy1.csv
-│   ├── CVD_20reduced_strategy2.csv
-│   ├── CVD_20reduced.csv
+│   ├── CVD_cleaned.csv
 │   └── CVD_normalized_discretized_processed.csv
 ├── notebooks
 │   ├── DataUnderstanding.ipynb
 │   ├── DataPreparation.ipynb
+│   ├── Deployment.ipynb
+│   ├── Evaluation.ipynb
 │   └── Modeling.ipynb
 ├── .vscode
 │   │   └── setting.json
@@ -61,12 +58,60 @@ O notebook importa bibliotecas essenciais para manipulação e visualização de
         data_path = '../data/'
         cvd_df = pd.read_csv(data_path + 'CVD_cleaned.csv')
 
-
 ### [DataPreparation.ipynb](notebooks/DataPreparation.ipynb)
 
 ### [Modeling.ipynb](notebooks/Modeling.ipynb)
+
 ### [Evaluation.ipynb](notebooks/Evaluation.ipynb)
+Este Jupyter Notebook avalia o desempenho dos modelos de machine learning testados na previsão de doenças cardíacas, utilizando métricas de desempenho e análise de clustering para identificar padrões relevantes nos dados.
+
+#### Conclusão da Avaliação dos Modelos:
+
+* Decision Tree é o modelo de aprendizagem supervisionada mais eficiente no equilíbrio entre precisão e execução.
+
+* Nos algoritmos de aprendizagem não-supervisionada, o *K-Means* mostrou ser mais eficiente devido ao tamanho substancial da base de dados e à sua capacidade de lidar com grandes volumes de dados de forma rápida e eficaz.
+
 ### [Deployment.ipynb](notebooks/Deployment.ipynb)
+Este Jupyter Notebook implementa um modelo de *Decision Tree* para a predição de doenças cardiovasculares e realiza uma análise dos *clusters* gerados pelo K-Means. O objetivo principal é criar um modelo preditivo para identificar a probabilidade de ocorrência de doenças cardiovasculares com base no *dataset*. Além disso, são aplicados métodos de visualização para entender melhor a distribuição dos dados e os resultados dos clusters.
+
+#### Importações
+O notebook importa bibliotecas essenciais para manipulação e visualização de dados:
+
+        import pandas as pd
+        import numpy as np
+        import seaborn as sns
+        import matplotlib.pyplot as plt
+        from sklearn.tree import DecisionTreeClassifier
+        from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+        from sklearn.preprocessing import StandardScaler
+        from sklearn.decomposition import PCA
+        from sklearn.cluster import KMeans
+
+#### Carregamento do *dataset* normalizado
+
+        data_path = '../data/' 
+        cvd_df_processed = pd.read_csv(data_path + 'CVD_normalized_discretized_processed.csv')
+
+#### Pré-processamento dos Dados
+* O código divide as variáveis em atributos (X) e o alvo (y), sendo que o alvo é a variável `Heart_Disease`, que indica se o paciente tem ou não CVD.
+
+#### *Decision Tree* 
+* É utilizado um modelo de *Decision Tree* com profundidade máxima de 5 (max_depth=5).
+
+* O modelo é treinado nos dados e, em seguida, avaliado com a precisão (`accuracy_score`) e um relatório de classificação (`classification_report`), além de gerar uma matriz de confusão para visualizar a performance do modelo.
+
+#### *K-Means*
+
+*  Para reduzir o tamanho do conjunto de dados e melhorar a performance, é realizada uma amostragem de 80% dos dados.
+
+* O algoritmo *K-Means* é usado para dividir os dados em 3 clusters, e os resultados são visualizados através de gráficos de dispersão, com a variável alvo `Heart_Disease` e outras variáveis de interesse.
+
+
+
+
+
+
+
 
 
 
