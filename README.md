@@ -61,7 +61,15 @@ O notebook importa bibliotecas essenciais para manipulação e visualização de
 ### [DataPreparation.ipynb](notebooks/DataPreparation.ipynb)
 
 ### [Modeling.ipynb](notebooks/Modeling.ipynb)
+
 ### [Evaluation.ipynb](notebooks/Evaluation.ipynb)
+Este Jupyter Notebook avalia o desempenho dos modelos de machine learning testados na previsão de doenças cardíacas, utilizando métricas de desempenho e análise de clustering para identificar padrões relevantes nos dados.
+
+#### Conclusão da Avaliação dos Modelos:
+
+* Decision Tree é o modelo de aprendizagem supervisionada mais eficiente no equilíbrio entre precisão e execução.
+
+* Nos algoritmos de aprendizagem não-supervisionada, o *K-Means* mostrou ser mais eficiente devido ao tamanho substancial da base de dados e à sua capacidade de lidar com grandes volumes de dados de forma rápida e eficaz.
 
 ### [Deployment.ipynb](notebooks/Deployment.ipynb)
 Este Jupyter Notebook implementa um modelo de *Decision Tree* para a predição de doenças cardiovasculares e realiza uma análise dos *clusters* gerados pelo K-Means. O objetivo principal é criar um modelo preditivo para identificar a probabilidade de ocorrência de doenças cardiovasculares com base no *dataset*. Além disso, são aplicados métodos de visualização para entender melhor a distribuição dos dados e os resultados dos clusters.
