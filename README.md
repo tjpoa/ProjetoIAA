@@ -55,7 +55,6 @@ O notebook importa bibliotecas essenciais para manipulação e visualização de
         data_path = '../data/'
         cvd_df = pd.read_csv(data_path + 'CVD_cleaned.csv')
 
-
 ### [DataPreparation.ipynb](notebooks/DataPreparation.ipynb)
 
 ### [Modeling.ipynb](notebooks/Modeling.ipynb)
