@@ -58,9 +58,58 @@ O notebook importa bibliotecas essenciais para manipulação e visualização de
         data_path = '../data/'
         cvd_df = pd.read_csv(data_path + 'CVD_cleaned.csv')
 
-### [DataPreparation.ipynb](notebooks/DataPreparation.ipynb)
+### [DataPreparation.ipynb](notebooks/DataPreparation.ipynb)~
+Este Jupyter Notebook realiza a preparação de dados para análise e modelagem, abordando etapas essenciais como limpeza, tratamento de valores ausentes, normalização e transformação de variáveis. Essas etapas são fundamentais para garantir a qualidade do conjunto de dados e a eficácia de algoritmos de aprendizagem automática aplicados posteriormente.
+
+#### Carregamento do Dataset
+
+        data_path = '../data/'
+        cvd_df = pd.read_csv(data_path + 'CVD_cleaned.csv')
+
+#### Análise e Limpeza de Dados
+
+* Discretização e Normalização de variáveis.
+
+
+
+#### Tratamento de Valores Ausentes
+
+* Identificação de atributos com dados ausentes.
+
+* Aplicação de estratégias para tratamento:
+
+1. Substituição dos valores ausentes por valores média, no caso das variáveis numéricas ou moda, no caso das variáveis categóricas.
+
+2. Remoção de linhas com valores ausentes. 
+
+
+#### Exportação do Dataset Tratado
+        
 
 ### [Modeling.ipynb](notebooks/Modeling.ipynb)
+Este Jupyter Notebook testa o desempenho dos métodos supervisionados na previsão da variável-alvo Heart_Disease e em identificar grupos relevantes por meio de métodos não supervisionados.
+
+* Separação do conjunto de dados tratado em 80% para treino e 20% para teste.
+* Implementação teste dos modelos de aprendizagem supervisionada (*Decision Tree*: `DecisionTreeClassifier`; *Multi-Layer Perception (MLP)*: ` MLPClassifier`; *k-Nearest Neighbors*: `KNeighborsClassifier`).
+
+* Implementação teste dos modelos de aprendizagem não-supervisionada (*K-Means*: `KMeans`; *DBScan*: `DBSCAN`).
+
+#### Importações
+O notebook importa bibliotecas essenciais para manipulação e visualização de dados:
+                        
+        from sklearn.neighbors import KNeighborsClassifier
+        import pandas as pd
+        from sklearn.model_selection import train_test_split
+        from sklearn.tree import DecisionTreeClassifier
+        from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+        import seaborn as sns
+        import matplotlib.pyplot as plt
+        import os
+        from sklearn.neural_network import MLPClassifier
+        from sklearn.cluster import KMeans
+        from sklearn.preprocessing import StandardScaler
+        from sklearn.cluster import DBSCAN
+
 
 ### [Evaluation.ipynb](notebooks/Evaluation.ipynb)
 Este Jupyter Notebook avalia o desempenho dos modelos de machine learning testados na previsão de doenças cardíacas, utilizando métricas de desempenho e análise de clustering para identificar padrões relevantes nos dados.
