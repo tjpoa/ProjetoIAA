@@ -1,0 +1,77 @@
+{
+    "General_Health": {
+        "0": "Excellent",
+        "1": "Fair",
+        "2": "Good",
+        "3": "Poor",
+        "4": "Very Good"
+    },
+    "Checkup": {
+        "0": "5 or more years ago",
+        "1": "Never",
+        "2": "Within the past 2 years",
+        "3": "Within the past 5 years",
+        "4": "Within the past year"
+    },
+    "Exercise": {
+        "0": "No",
+        "1": "Yes"
+    },
+    "Heart_Disease": {
+        "0": "No",
+        "1": "Yes"
+    },
+    "Skin_Cancer": {
+        "0": "No",
+        "1": "Yes"
+    },
+    "Other_Cancer": {
+        "0": "No",
+        "1": "Yes"
+    },
+    "Depression": {
+        "0": "No",
+        "1": "Yes"
+    },
+    "Diabetes": {
+        "0": "No",
+        "1": "Yes"
+    },
+    "Arthritis": {
+        "0": "No",
+        "1": "Yes"
+    },
+    "Sex": {
+        "0": "Female",
+        "1": "Male"
+    },
+    "Age_Category": {
+        "0": "18-24",
+        "1": "25-29",
+        "2": "30-34",
+        "3": "35-39",
+        "4": "40-44",
+        "5": "45-49",
+        "6": "50-54",
+        "7": "55-59",
+        "8": "60-64",
+        "9": "65-69",
+        "10": "70-74",
+        "11": "75-79",
+        "12": "80+"
+    },
+    "Smoking_History": {
+        "0": "No",
+        "1": "Yes"
+    },
+    "BMI_classes": {
+        "0": "Magreza",
+        "1": "Normal",
+        "2": "Obesidade",
+        "3": "Sobrepeso"
+    },
+    "Alcohol_Consumption_class": {
+        "0": "No",
+        "1": "Yes"
+    }
+}
