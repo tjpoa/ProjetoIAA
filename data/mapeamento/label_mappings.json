@@ -35,9 +35,7 @@
     },
     "Diabetes": {
         "0": "No",
-        "1": "No, pre-diabetes or borderline diabetes",
-        "2": "Yes",
-        "3": "Yes, but female told only during pregnancy"
+        "1": "Yes"
     },
     "Arthritis": {
         "0": "No",
